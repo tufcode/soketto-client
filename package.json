@@ -1,6 +1,6 @@
 {
   "name": "soketto-client",
-  "version": "1.0.0-release",
+  "version": "1.0.1-release",
   "author": "Tufan Meriç Uyguner",
   "license": "MIT",
   "keywords": [],
@@ -23,7 +23,6 @@
     "lib",
     "LICENSE",
     "README.md",
-    "CHANGELOG.md",
     "package.json"
   ],
   "scripts": {
@@ -53,7 +52,7 @@
     "access": "public"
   },
   "dependencies": {
-    "paketto": "^0.0.1",
+    "paketto": "^1.0.0-release",
     "tslib": "^2.5.0",
     "ws": "^8.13.0"
   }
