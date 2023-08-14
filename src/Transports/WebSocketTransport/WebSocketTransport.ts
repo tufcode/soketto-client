@@ -38,6 +38,9 @@ export class WebSocketTransport implements ITransport {
   connect(serverAddr: string): void {
     if (this._ws) throw new Error("Already connected or connecting");
 
+    serverAddr = serverAddr.replace("http", "ws");
+    serverAddr = serverAddr.replace("https", "wss");
+
     this._ws = new WebSocket(serverAddr);
     this._ws.binaryType = "arraybuffer";
     this._ws.onopen = () => {
